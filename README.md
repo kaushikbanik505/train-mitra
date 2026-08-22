@@ -249,4 +249,4 @@ This has been a solo, incrementally-built project — if you're picking up a cop
 
 ---
 
-Designed & developed by **Kaushik Banik**. Full project spec: [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
+Designed & developed by **Kaushik Banik**.
