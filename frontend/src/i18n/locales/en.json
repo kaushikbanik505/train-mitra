@@ -1,0 +1,294 @@
+{
+  "language": {
+    "label": "Language",
+    "choose": "Choose your language",
+    "names": {
+      "en": "English",
+      "hi": "हिन्दी (Hindi)",
+      "bn": "বাংলা (Bengali)",
+      "ta": "தமிழ் (Tamil)",
+      "mr": "मराठी (Marathi)",
+      "kn": "ಕನ್ನಡ (Kannada)",
+      "pa": "ਪੰਜਾਬੀ (Punjabi)",
+      "or": "ଓଡ଼ିଆ (Odia)",
+      "te": "తెలుగు (Telugu)"
+    }
+  },
+  "navbar": {
+    "menu": {
+      "home": "Home",
+      "trackTrains": "Track Trains",
+      "tatkalBooking": "Tatkal Booking",
+      "delayReports": "Delay Reports",
+      "liveStatus": "Live Status",
+      "passengerExperience": "Passenger Experience"
+    },
+    "login": "Log in",
+    "register": "Register",
+    "activeNow": "Active now",
+    "copyEmail": "Copy email address",
+    "editProfile": "Edit profile",
+    "logOut": "Log out",
+    "noBio": "No bio yet.",
+    "changePhoto": "Change photo",
+    "removePhoto": "Remove",
+    "fields": {
+      "name": "Name",
+      "bio": "Bio",
+      "bioPlaceholder": "Tell fellow passengers a bit about yourself",
+      "links": "Links",
+      "linkPlaceholder": "yourwebsite.com or a social profile",
+      "addLink": "Add another link",
+      "phone": "Phone",
+      "homeStation": "Home station",
+      "homeStationPlaceholder": "e.g. New Delhi (NDLS)"
+    },
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "logoutConfirm": {
+      "title": "Log out?",
+      "body": "You'll need to log in again to access your account.",
+      "cancel": "Cancel",
+      "confirm": "Log out"
+    }
+  },
+  "footer": {
+    "disclaimer": "No live GPS tracking or real ticket-availability prediction - this app runs entirely on rule-based logic and crowdsourced passenger reports, by design.",
+    "credit": "Designed & developed by Kaushik Banik",
+    "copyright": "© {{year}} TrainMitra. All rights reserved."
+  },
+  "hero": {
+    "eyebrow": "Built for Indian Railways passengers",
+    "headlineStart": "Real train status,",
+    "headlineHighlight": "from real passengers.",
+    "subtitle": "No official GPS feed, no fake predictions - just crowdsourced delay reports, live updates from people actually on the train, and a rule-based Tatkal countdown you can trust.",
+    "createAccount": "Create free account",
+    "seeWhatItDoes": "See what it does",
+    "footnote": "Free to use · No official IRCTC data · Community-powered"
+  },
+  "featureGrid": {
+    "heading": "What {{brand}} does",
+    "subheading": "Being built incrementally - here's what's live today vs. what's coming next.",
+    "hornHint": "Toot the horn",
+    "status": {
+      "live": "Live",
+      "comingSoon": "Coming soon"
+    },
+    "tryIt": "Try it",
+    "items": {
+      "accounts": { "title": "Accounts & roles", "description": "Register, log in, and get a role (guest, user, moderator, admin) that controls what you can do." },
+      "trainLookup": { "title": "Train lookup", "description": "Search any train by number or name, or find every direct train between two stations, with full stop-by-stop timings." },
+      "tatkal": { "title": "Tatkal booking info", "description": "See exactly when Tatkal opens for any train - AC and Sleeper timings, its origin station, and a direct link to book on IRCTC." },
+      "delay": { "title": "Delay reports", "description": "See and submit crowdsourced reasons for delays, ranked by community votes." },
+      "liveStatus": { "title": "Live status feed", "description": "Real-time updates on where a train is right now - station and platform - reported live by passengers on board." },
+      "experience": { "title": "Passenger experience", "description": "Crowdsourced Tatkal sellout estimates plus real ratings on cleanliness, food, staff, punctuality and safety - opinion, not prediction." }
+    }
+  },
+  "faq": {
+    "headingPrefix": "Got",
+    "headingHighlight": "questions",
+    "subheading": "Here's what people usually ask before using TrainMitra.",
+    "toggleButton": "Frequently Asked Questions",
+    "items": [
+      { "q": "Is TrainMitra affiliated with IRCTC or Indian Railways?", "a": "No. TrainMitra is an independent, community-run project. Every delay reason, live update and experience rating comes from real passengers, not an official feed - so for anything booking-critical, always double-check on the official IRCTC site." },
+      { "q": "Where does live train status come from if there's no GPS tracking?", "a": "From passengers actually on board. There's no satellite or GPS feed behind it - people post the station (and platform, if they know it) as the train passes through, and it updates in real time for everyone else tracking that same train." },
+      { "q": "How does the Tatkal countdown work?", "a": "It's a fixed rule, not a live feed: AC classes open at 10:00 AM and Sleeper/Second Sitting at 11:00 AM, one day before the journey, from the train's origin station. TrainMitra just calculates the next opening time and counts down to it. It assumes the train runs daily, so if a train only runs on specific days, double-check that on IRCTC too." },
+      { "q": "What's the difference between Tatkal Experience and Journey Experience?", "a": "Tatkal Experience is about booking - passengers report how many minutes after opening a class actually sold out, so you get a real sense of how fast Tatkal moves for that train. Journey Experience is about the ride itself - ratings for cleanliness, food, staff behaviour, punctuality and safety from people who've actually travelled on it." },
+      { "q": "Are delay reports and live status updates reset every day?", "a": "Yes, both reset automatically at midnight IST, and the date on a report is always set by our server rather than something you can pick - that stops old or backdated reports from lingering or being used to dodge moderation. Tatkal and Journey Experience aren't reset daily since those are long-running community averages, not day-specific reports." },
+      { "q": "How are fake or spammy reports kept in check?", "a": "A few ways: everyone gets a daily posting limit, any report that gets heavily downvoted automatically blocks that user from posting again for the rest of the day, and votes are one per person per report. It's not perfect, but it keeps the noise down without needing constant moderation." },
+      { "q": "Do I need an account to use TrainMitra?", "a": "Only to post - a delay report, a live update, an experience rating or a vote. Searching for trains and routes, and reading everything the community has already shared, is open to everyone without logging in." },
+      { "q": "Is TrainMitra free to use?", "a": "Completely. No ads, no paid tiers, nothing to unlock - it only exists because passengers are willing to share what they see." }
+    ]
+  },
+  "auth": {
+    "login": {
+      "badge": "🔐 Welcome back",
+      "title": "Log in to {{brand}}",
+      "submit": "Log in",
+      "submitting": "Logging in...",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Register",
+      "error": "Login failed"
+    },
+    "register": {
+      "badge": "🚆 Join TrainMitra",
+      "title": "Create your account",
+      "submit": "Register",
+      "submitting": "Creating account...",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Log in",
+      "error": "Registration failed"
+    },
+    "banned": "This account has been banned.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "passwordMinChars": "Password (min 8 characters)"
+    },
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "trainSearch": {
+    "badge": "🚆 Routes, delay reasons & live status",
+    "headline": {
+      "plain": { "before": "Find a ", "word": "Train", "after": "" },
+      "tatkal": { "before": "Know Everything About ", "word": "Tatkal", "after": "" },
+      "delay": { "before": "Why Is Your ", "word": "Train", "after": " Late?" },
+      "live": { "before": "Track Your ", "word": "Train", "after": " Live" },
+      "experience": { "before": "Real ", "word": "Passenger", "after": " Experiences" }
+    },
+    "subtitle": {
+      "train": "Search any Indian Railways train by number or name to see its full route and live updates from passengers on board.",
+      "route": "Enter where you're travelling from and to, see every direct train on that route, then open one to check delay reports and live status."
+    },
+    "entryBanner": {
+      "tatkal": { "title": "Looking for Tatkal timings?", "body": "its Tatkal booking times and origin station will show up once you open it." },
+      "delay": { "title": "Looking for delay reasons?", "body": "crowdsourced delay reports for it will show up once you open it." },
+      "live": { "title": "Looking for live status?", "body": "real-time updates from passengers on it will show up once you open it." },
+      "experience": { "title": "Curious about the real experience?", "body": "community Tatkal sellout estimates plus ratings for cleanliness, food, staff, punctuality and safety will show up once you open it." },
+      "middle": "Search a train by number or name below (or find one by route) —"
+    },
+    "tabs": { "byTrain": "By Train", "byRoute": "By Route" },
+    "searchPlaceholder": "e.g. 12951 or Rajdhani",
+    "clearSearch": "Clear search",
+    "searching": "Searching...",
+    "noTrainsFound": "No trains found.",
+    "searchingStations": "Searching...",
+    "noStationsFound": "No stations found.",
+    "from": "From",
+    "to": "To",
+    "fromPlaceholder": "e.g. New Delhi or NDLS",
+    "toPlaceholder": "e.g. Mumbai or MMCT",
+    "swapStations": "Swap stations",
+    "popular": "Popular:",
+    "searchingTrains": "Searching trains...",
+    "noDirectTrains": "No direct trains found between these stations, even nearby.",
+    "noDirectTrainNote": "No direct train between {{from}} and {{to}} exactly — showing trains via nearby stations in the same city instead.",
+    "expandRoute": "Expand route",
+    "minimiseRoute": "Minimise route",
+    "close": "Close",
+    "day": "Day {{day}}",
+    "emptyStateHint": {
+      "plain": { "train": "Search for a train number or name above, or tap a popular one to see its full route.", "route": "Pick a from and to station above to see every direct train between them." },
+      "tatkal": { "train": "Search for a train number or name above, or tap a popular one - then open it to see its Tatkal booking times.", "route": "Pick a from and to station above, then open a train to check its Tatkal booking times." },
+      "delay": { "train": "Search for a train number or name above, or tap a popular one - then open it to see why it's late.", "route": "Pick a from and to station above, then open a train to check its delay reports." },
+      "live": { "train": "Search for a train number or name above, or tap a popular one - then open it to see live updates from passengers on board.", "route": "Pick a from and to station above, then open a train to check its live status." },
+      "experience": { "train": "Search for a train number or name above, or tap a popular one - then open it to share or see real passenger experiences: Tatkal sellout times, cleanliness, food, staff, punctuality and safety.", "route": "Pick a from and to station above, then open a train to check community Tatkal estimates and journey ratings." }
+    },
+    "tatkalBooking": {
+      "title": "Tatkal Booking",
+      "body": "Tatkal tickets for this train open from its origin station, {{station}} ({{code}}), one day before the date of journey.",
+      "acClasses": "AC classes (1A / 2A / 3A / CC)",
+      "sleeperSecond": "Sleeper & Second Sitting",
+      "opensAt": "Opens {{hour}}:00 {{ampm}} · {{date}}",
+      "forJourneyOn": "for the journey on {{date}}",
+      "bookOnIrctc": "Book on IRCTC"
+    },
+    "stops": {
+      "origin": "Origin",
+      "arr": "Arr {{time}}",
+      "dep": "Dep {{time}}"
+    }
+  },
+  "delayReports": {
+    "title": "Delay Reports",
+    "leftToday": "{{count}} left today",
+    "resetNote": "Today only - reports reset daily at midnight IST so old comments can't be reused to mislead people.",
+    "loading": "Loading reports…",
+    "loadError": "Could not load delay reports.",
+    "empty": "No delay reports yet today. Be the first to share what's going on.",
+    "someone": "Someone",
+    "you": " (you)",
+    "upvote": "Upvote",
+    "downvote": "Downvote",
+    "loginPrompt": "Log in",
+    "loginToPost": " to report a delay or vote on existing reports.",
+    "blocked": "Posting is blocked for today - one of your posts got too many dislikes. Resets at midnight IST.",
+    "quotaExhausted": "You've used all {{limit}} delay reports for today. Resets at midnight IST.",
+    "reasonPlaceholder": "e.g. Signal failure near Kanpur",
+    "submit": "Report delay",
+    "submitting": "Submitting…",
+    "submitError": "Failed to submit your report.",
+    "queuedOffline": "Saved — will send once you're back online.",
+    "trustedContributor": "Trusted contributor - their reports have consistently held up over time"
+  },
+  "liveStatus": {
+    "title": "Live Status",
+    "leftToday": "{{count}} left today",
+    "description": "Real-time reports from passengers on today's journey - who's where, right now. Confirm or flag updates to help others tell real reports from false ones. Resets daily at midnight IST.",
+    "loading": "Loading updates…",
+    "loadError": "Could not load live status updates.",
+    "empty": "No live updates yet today. If you're on this train, let others know where you are.",
+    "someone": "Someone",
+    "confirmAccurate": "Confirm accurate",
+    "confirmAccurateTitle": "Confirm this looks accurate",
+    "reportFalse": "Report as false",
+    "reportFalseTitle": "Report this as false",
+    "loginPrompt": "Log in",
+    "loginToPost": " to post a live status update.",
+    "blocked": "Posting is blocked for today - one of your posts got too many dislikes. Resets at midnight IST.",
+    "quotaExhausted": "You've used all {{limit}} live status updates for today. Resets at midnight IST.",
+    "whereAreYou": "Where are you?",
+    "platformPlaceholder": "Platform number",
+    "messagePlaceholder": "e.g. Just arrived, on time",
+    "submit": "Post update",
+    "submitting": "Posting…",
+    "submitError": "Failed to submit your update.",
+    "justNow": "just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "queuedOffline": "Saved — will send once you're back online.",
+    "trustedContributor": "Trusted contributor - their updates have consistently held up over time"
+  },
+  "tatkalExperience": {
+    "title": "Tatkal Experience",
+    "description": "Community estimates from passengers who've actually booked this train's Tatkal - not a prediction, just what people have experienced.",
+    "loading": "Loading…",
+    "avgMinutes": "~{{minutes}} min",
+    "estimateFromReports": "community estimate to sell out, from {{count}} report",
+    "estimateFromReports_plural": "community estimate to sell out, from {{count}} reports",
+    "noReports": "No reports yet - be the first to share.",
+    "loginPrompt": "Log in",
+    "loginToShare": " to share your own Tatkal experience for this train.",
+    "minutesPlaceholder": "Minutes until it sold out",
+    "submit": "Share",
+    "submitting": "Submitting…",
+    "submitted": "Thanks!",
+    "submitError": "Failed to submit your experience."
+  },
+  "journeyExperience": {
+    "title": "Journey Experience",
+    "description": "Real ratings from passengers who've actually travelled on this train - cleanliness, food, staff, punctuality and safety, not just a Tatkal-day snapshot.",
+    "loading": "Loading…",
+    "noRatings": "No ratings yet - be the first to share your experience.",
+    "basedOnRatings": "based on {{count}} rating",
+    "basedOnRatings_plural": "based on {{count}} ratings",
+    "categories": {
+      "cleanliness": "Cleanliness",
+      "food": "Food quality",
+      "staffBehaviour": "Staff behaviour",
+      "punctuality": "Punctuality",
+      "safety": "Safety"
+    },
+    "loginPrompt": "Log in",
+    "loginToRate": " to rate your own journey experience on this train.",
+    "commentPlaceholder": "Anything else worth sharing? (optional)",
+    "submit": "Share your experience",
+    "update": "Update your rating",
+    "submitting": "Submitting…",
+    "submitted": "Thanks!",
+    "submitError": "Failed to submit your experience.",
+    "justNow": "just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago",
+    "monthsAgo": "{{count}}mo ago"
+  },
+  "offline": {
+    "offline": "You're offline — new reports will send once you reconnect.",
+    "offlineWithQueue": "You're offline — {{count}} update(s) waiting to send.",
+    "sending": "Sending {{count}} queued update(s)…"
+  }
+}
