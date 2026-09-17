@@ -8,6 +8,183 @@ IRCTC gives you the official timetable, but nothing about what's actually happen
 
 No official IRCTC data. Not affiliated with Indian Railways. Free to use, no ads, no paid tiers.
 
+## 📂 Project Structure
+
+```text
+└── kaushikbanik505-train-mitra/
+    ├── README.md
+    ├── backend/
+    │   ├── package.json
+    │   ├── .env.example
+    │   ├── backend/
+    │   │   └── src/
+    │   │       ├── socket.js
+    │   │       ├── controllers/
+    │   │       │   └── liveStatusController.js
+    │   │       ├── models/
+    │   │       │   └── LiveStatusUpdate.js
+    │   │       └── routes/
+    │   │           └── liveStatusRoutes.js
+    │   ├── scripts/
+    │   │   ├── generate-backend-source.mjs
+    │   │   └── promote-admin.js
+    │   └── src/
+    │       ├── server.js
+    │       ├── socket.js
+    │       ├── config/
+    │       │   └── db.js
+    │       ├── controllers/
+    │       │   ├── adminController.js
+    │       │   ├── authController.js
+    │       │   ├── chatController.js
+    │       │   ├── delayReportController.js
+    │       │   ├── journeyExperienceController.js
+    │       │   ├── liveStatusController.js
+    │       │   ├── tatkalExperienceController.js
+    │       │   ├── trainController.js
+    │       │   └── userController.js
+    │       ├── data/
+    │       │   └── cityAliases.js
+    │       ├── jobs/
+    │       │   └── dailyCleanup.js
+    │       ├── middleware/
+    │       │   ├── auth.js
+    │       │   └── chatRateLimit.js
+    │       ├── models/
+    │       │   ├── DelayReport.js
+    │       │   ├── JourneyExperience.js
+    │       │   ├── LiveStatusUpdate.js
+    │       │   ├── TatkalExperience.js
+    │       │   ├── Train.js
+    │       │   ├── User.js
+    │       │   └── voteSchema.js
+    │       ├── routes/
+    │       │   ├── adminRoutes.js
+    │       │   ├── authRoutes.js
+    │       │   ├── chatRoutes.js
+    │       │   ├── delayReportRoutes.js
+    │       │   ├── healthRoutes.js
+    │       │   ├── journeyExperienceRoutes.js
+    │       │   ├── liveStatusRoutes.js
+    │       │   ├── tatkalExperienceRoutes.js
+    │       │   ├── trainRoutes.js
+    │       │   └── userRoutes.js
+    │       ├── seed/
+    │       │   ├── importTrains.js
+    │       │   └── seedTrains.js
+    │       ├── services/
+    │       │   ├── chatTools.js
+    │       │   └── geminiChat.js
+    │       └── utils/
+    │           ├── dateUtils.js
+    │           ├── email.js
+    │           ├── generateTokens.js
+    │           ├── moderation.js
+    │           └── reputation.js
+    ├── docs/
+    │   └── PROJECT_SPEC.md
+    └── frontend/
+        ├── README.md
+        ├── eslint.config.js
+        ├── index.html
+        ├── package.json
+        ├── postcss.config.js
+        ├── tailwind.config.js
+        ├── verify_learner_gate.mjs
+        ├── vite.config.js
+        ├── .env.example
+        ├── frontend/
+        │   └── src/
+        │       ├── socket.js
+        │       └── hooks/
+        │           └── useTrainRoom.js
+        ├── scripts/
+        │   └── generate_pwa_icons.py
+        └── src/
+            ├── App.jsx
+            ├── index.css
+            ├── main.jsx
+            ├── socket.js
+            ├── api/
+            │   └── client.js
+            ├── components/
+            │   ├── AboutBadge.jsx
+            │   ├── AdminBadge.jsx
+            │   ├── Bubbles.jsx
+            │   ├── ChatBadge.jsx
+            │   ├── ChatPanel.jsx
+            │   ├── DelayReports.jsx
+            │   ├── DeveloperBadge.jsx
+            │   ├── DigitalClock.jsx
+            │   ├── FAQ.jsx
+            │   ├── FeatureGrid.jsx
+            │   ├── Footer.jsx
+            │   ├── Hero.jsx
+            │   ├── JourneyExperience.jsx
+            │   ├── LanguageBadge.jsx
+            │   ├── LearnerBadge.jsx
+            │   ├── learnerUI.jsx
+            │   ├── LiveStatsBadges.jsx
+            │   ├── LiveStatusFeed.jsx
+            │   ├── Navbar.jsx
+            │   ├── OfflineBanner.jsx
+            │   ├── OwnerOnlyRoute.jsx
+            │   ├── PageTransition.jsx
+            │   ├── ScrollProgress.jsx
+            │   ├── SkyBackground.jsx
+            │   ├── StationClock.jsx
+            │   ├── TatkalExperience.jsx
+            │   ├── TrainTrack.jsx
+            │   ├── TrustBadge.jsx
+            │   └── WhatsNextBadge.jsx
+            ├── constants/
+            │   ├── access.js
+            │   └── reputation.js
+            ├── content/
+            │   ├── aboutContent.js
+            │   ├── developerContent.js
+            │   └── learnerContent.js
+            ├── context/
+            │   └── AuthContext.jsx
+            ├── hooks/
+            │   ├── useLiveStats.js
+            │   ├── useOnlineStatus.js
+            │   ├── useQueueCount.js
+            │   ├── useTimeOfDay.js
+            │   └── useTrainRoom.js
+            ├── i18n/
+            │   ├── index.js
+            │   └── locales/
+            │       ├── bn.json
+            │       ├── en.json
+            │       ├── hi.json
+            │       ├── kn.json
+            │       ├── mr.json
+            │       ├── or.json
+            │       ├── pa.json
+            │       ├── ta.json
+            │       └── te.json
+            ├── offline/
+            │   ├── offlineQueue.js
+            │   └── offlineSync.js
+            ├── pages/
+            │   ├── About.jsx
+            │   ├── AdminDashboard.jsx
+            │   ├── Developer.jsx
+            │   ├── Home.jsx
+            │   ├── Learner.jsx
+            │   ├── LearnerBackend.jsx
+            │   ├── LearnerFrontend.jsx
+            │   ├── Login.jsx
+            │   ├── Register.jsx
+            │   ├── TrainSearch.jsx
+            │   ├── VerifyEmail.jsx
+            │   └── WhatsNext.jsx
+            └── utils/
+                └── resizeImage.js
+```
+
+
 ## Table of contents
 
 - [Features](#features)
