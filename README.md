@@ -246,6 +246,10 @@ All routes are prefixed with `/api`. **Auth** column: `public` = no token needed
 
 This has been a solo, incrementally-built project — if you're picking up a copy of the code, here's how to work on it without fighting the existing patterns:
 
+## design 
+<img src="https://github.com/user-attachments/assets/b80b8670-cc0e-44af-bdaa-19bb4b5192eb" alt="diagram" style="max-width: 100%; height: auto;">
+
+
 - Match what's already there: no comments unless something is genuinely non-obvious, no new abstraction for a one-off case, Tailwind utility classes instead of new CSS files.
 - Run both the backend and frontend locally (see [Getting started](#getting-started)) and actually click through whatever you changed before calling it done — a build passing isn't the same as a feature working.
 
